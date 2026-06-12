@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styles from './ScrollLoadingScreenStyles';
+import styles from '../styles/ScrollLoadingScreenStyles';
 
 const generateItems = (start, count) => {
   let items = [];
@@ -53,19 +53,19 @@ export default function ScrollLoadingScreen() {
         <Text style={styles.title}>Scroll con carga (Infinite Scroll)</Text>
         <FlatList
           data={data}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <View style={styles.item}>
-            <Text style={styles.itemText}>{item.title}</Text>
-          </View>
-        )}
-        onEndReached={loadMoreItems}
-        onEndReachedThreshold={0.5}
-        ListFooterComponent={renderFooter}
-        contentContainerStyle={styles.flatListContent}
-      />
-    </View>
-  </SafeAreaView>
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <View style={styles.item}>
+              <Text style={styles.itemText}>{item.title}</Text>
+            </View>
+          )}
+          onEndReached={loadMoreItems}
+          onEndReachedThreshold={0.5}
+          ListFooterComponent={renderFooter}
+          contentContainerStyle={styles.flatListContent}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
 

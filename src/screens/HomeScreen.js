@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ScrollView, View, Text, Modal, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Select from '../src/components/forms/Select';
+import Select from '../components/forms/Select';
 import { useNavigation } from '@react-navigation/native';
-import styles from './HomeScreenStyles';
+import styles from '../styles/HomeScreenStyles';
 
 function AccentButton({ label, color, onPress }) {
   return (

@@ -1,13 +1,13 @@
 import { ScrollView, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styles from './SettingsScreenStyles';
+import styles from '../styles/ProfileScreenStyles';
 
-export default function SettingsScreen() {
+export default function ProfileScreen() {
   return (
     <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.container}>
-        <Text style={styles.title}>Configuración</Text>
-        <Text>Aquí irán las opciones de configuración</Text>
+        <Text style={styles.title}>Perfil de Usuario</Text>
+        <Text>Esta es la pantalla de perfil</Text>
       </ScrollView>
     </SafeAreaView>
   );

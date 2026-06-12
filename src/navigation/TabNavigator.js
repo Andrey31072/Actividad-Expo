@@ -25,9 +25,9 @@ export default function TabNavigator() {
           if (route.name === 'Home') iconName = focused ? 'home' : 'home-outline';
           else if (route.name === 'Calculator') iconName = focused ? 'calculator' : 'calculator-outline';
           else if (route.name === 'ScrollLoad') iconName = focused ? 'list' : 'list-outline';
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Ionicons  name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: '#5B61FF',
+        tabBarActiveTintColor: '#696ba5',
         tabBarInactiveTintColor: '#8A8A9F',
         tabBarStyle: {
           backgroundColor: '#FFFFFF',
